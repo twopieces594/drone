@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="boat">
+    <static>true</static>
+      <link name="boat">
+        <pose frame=''>0 0 0 0 0 0</pose>
+          <collision name="boat">
+            <geometry>
+              <mesh>
+                <uri>model://boat/model.dae</uri>
+              </mesh>
+            </geometry>
+          </collision>
+          <visual name="boat">
+          <cast_shadows>false</cast_shadows>
+            <geometry>
+              <mesh>
+                <uri>model://boat/model.dae</uri>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>model://boat/model.dae</uri>
+                <name>boat</name>
+              </script>
+            </material>
+          </visual>
+      </link>
+  </model>
+</sdf>

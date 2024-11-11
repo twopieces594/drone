@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="worker_y_n">
+    <static>true</static>
+      <link name="worker_y_n">
+        <pose frame=''>0 0 0 0 0 0</pose>
+          <collision name="worker_y_n">
+            <geometry>
+              <mesh>
+                <uri>model://worker_y_n/model.dae</uri>
+              </mesh>
+            </geometry>
+          </collision>
+          <visual name="worker_y_n">
+          <cast_shadows>false</cast_shadows>
+            <geometry>
+              <mesh>
+                <uri>model://worker_y_n/model.dae</uri>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>model://worker_y_n/model.dae</uri>
+                <name>worker_y_n</name>
+              </script>
+            </material>
+          </visual>
+      </link>
+  </model>
+</sdf>

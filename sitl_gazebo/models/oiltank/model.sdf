@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="oiltank">
+    <static>true</static>
+      <link name="oiltank">
+        <pose frame=''>0 0 0 0 0 0</pose>
+          <collision name="oiltank">
+            <geometry>
+              <mesh>
+                <uri>model://oiltank/model.dae</uri>
+              </mesh>
+            </geometry>
+          </collision>
+          <visual name="oiltank">
+          <cast_shadows>false</cast_shadows>
+            <geometry>
+              <mesh>
+                <uri>model://oiltank/model.dae</uri>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>model://oiltank/model.dae</uri>
+                <name>oiltank</name>
+              </script>
+            </material>
+          </visual>
+      </link>
+  </model>
+</sdf>

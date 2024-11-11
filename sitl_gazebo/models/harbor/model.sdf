@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="harbor">
+    <static>true</static>
+      <link name="harbor">
+        <pose frame=''>0 0 0 0 0 0</pose>
+          <collision name="harbor">
+            <geometry>
+              <mesh>
+                <uri>model://harbor/model.dae</uri>
+              </mesh>
+            </geometry>
+          </collision>
+          <visual name="harbor">
+          <cast_shadows>false</cast_shadows>
+            <geometry>
+              <mesh>
+                <uri>model://harbor/model.dae</uri>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>model://harbor/model.dae</uri>
+                <name>harbor</name>
+              </script>
+            </material>
+          </visual>
+      </link>
+  </model>
+</sdf>

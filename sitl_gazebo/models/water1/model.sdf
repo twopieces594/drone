@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="water1">
+    <static>true</static>
+      <link name="water1">
+        <pose frame=''>0 0 0 0 0 0</pose>
+          <collision name="water1">
+            <geometry>
+              <mesh>
+                <uri>model://water1/model.dae</uri>
+              </mesh>
+            </geometry>
+          </collision>
+          <visual name="water1">
+          <cast_shadows>false</cast_shadows>
+            <geometry>
+              <mesh>
+                <uri>model://water1/model.dae</uri>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>model://water1/model.dae</uri>
+                <name>water1</name>
+              </script>
+            </material>
+          </visual>
+      </link>
+  </model>
+</sdf>
